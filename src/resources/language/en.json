@@ -37,6 +37,8 @@
     }
   ],
   "educationTitle": "Education",
+  "major": "Major:",
+  "concentration": "Concentration:",
   "schools": [
     {
       "name": "British Columbia Institute of Technology",

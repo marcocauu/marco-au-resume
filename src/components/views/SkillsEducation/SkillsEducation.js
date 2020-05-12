@@ -17,7 +17,7 @@ const StyledDivCentered = styled(DivCentered)`
 
 const SkillsEducation = () => {
   return (
-    <StyledDivCentered height={100} darkMode>
+    <StyledDivCentered height={110} darkMode>
       <Skills />
       <Education />
     </StyledDivCentered>
