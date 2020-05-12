@@ -2,7 +2,7 @@
   "name": "marco-au-resume",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/marcocauu/marco-au-resume",
+  "homepage": "https://marcocauu.github.io/marco-au-resume",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
