@@ -4,11 +4,12 @@ import styled from "styled-components";
 import { SessionContext } from "../../../../providers";
 
 const StyledDiv = styled.div`
-  width: 50%;
-  padding: 2em;
+  width: 60%;
+  padding: 2em 2em 2em 8em;
 
   @media (max-width: 375px) {
     width: 100%;
+    padding: 2em;
   }
 `;
 
