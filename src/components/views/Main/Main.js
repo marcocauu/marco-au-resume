@@ -1,25 +1,25 @@
-import React from "react";
+import React, { useContext } from "react";
 
-import logo from "../../../resources/images/logo.svg";
+import {
+  ParallaxProvider,
+  SessionContext,
+  ThemeProvider,
+} from "../../providers";
+import { Banner } from "../Banner";
+import { Body } from "../Body";
+import { Intro } from "../Intro";
 
 const Main = () => {
+  const { language, theme } = useContext(SessionContext);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <ParallaxProvider>
+        <Body>
+          <Intro />
+          <Banner imageSrc={language.images.vancouver} />
+        </Body>
+      </ParallaxProvider>
+    </ThemeProvider>
   );
 };
 
