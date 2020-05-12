@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/marcocauu/marco-au-resume/static/css/main.5f361e03.chunk.css",
+    "main.js": "/marcocauu/marco-au-resume/static/js/main.22d9aed0.chunk.js",
+    "main.js.map": "/marcocauu/marco-au-resume/static/js/main.22d9aed0.chunk.js.map",
+    "runtime-main.js": "/marcocauu/marco-au-resume/static/js/runtime-main.6b2b5902.js",
+    "runtime-main.js.map": "/marcocauu/marco-au-resume/static/js/runtime-main.6b2b5902.js.map",
+    "static/js/2.5383874c.chunk.js": "/marcocauu/marco-au-resume/static/js/2.5383874c.chunk.js",
+    "static/js/2.5383874c.chunk.js.map": "/marcocauu/marco-au-resume/static/js/2.5383874c.chunk.js.map",
+    "index.html": "/marcocauu/marco-au-resume/index.html",
+    "precache-manifest.e481a0e462199b3e0aa0b169c589734d.js": "/marcocauu/marco-au-resume/precache-manifest.e481a0e462199b3e0aa0b169c589734d.js",
+    "service-worker.js": "/marcocauu/marco-au-resume/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/marcocauu/marco-au-resume/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.5383874c.chunk.js.LICENSE.txt": "/marcocauu/marco-au-resume/static/js/2.5383874c.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/marcocauu/marco-au-resume/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6b2b5902.js",
+    "static/js/2.5383874c.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.22d9aed0.chunk.js"
+  ]
+}
