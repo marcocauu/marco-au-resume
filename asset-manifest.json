@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/marcocauu/marco-au-resume/static/css/main.5f361e03.chunk.css",
-    "main.js": "/marcocauu/marco-au-resume/static/js/main.f84fc526.chunk.js",
-    "main.js.map": "/marcocauu/marco-au-resume/static/js/main.f84fc526.chunk.js.map",
-    "runtime-main.js": "/marcocauu/marco-au-resume/static/js/runtime-main.6b2b5902.js",
-    "runtime-main.js.map": "/marcocauu/marco-au-resume/static/js/runtime-main.6b2b5902.js.map",
-    "static/js/2.b046b821.chunk.js": "/marcocauu/marco-au-resume/static/js/2.b046b821.chunk.js",
-    "static/js/2.b046b821.chunk.js.map": "/marcocauu/marco-au-resume/static/js/2.b046b821.chunk.js.map",
-    "index.html": "/marcocauu/marco-au-resume/index.html",
-    "precache-manifest.a4ddeedf3372fc2f1951241905e51255.js": "/marcocauu/marco-au-resume/precache-manifest.a4ddeedf3372fc2f1951241905e51255.js",
-    "service-worker.js": "/marcocauu/marco-au-resume/service-worker.js",
-    "static/css/main.5f361e03.chunk.css.map": "/marcocauu/marco-au-resume/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.b046b821.chunk.js.LICENSE.txt": "/marcocauu/marco-au-resume/static/js/2.b046b821.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/marcocauu/marco-au-resume/static/media/logo.5d5d9eef.svg"
+    "main.css": "/marco-au-resume/static/css/main.5f361e03.chunk.css",
+    "main.js": "/marco-au-resume/static/js/main.81439064.chunk.js",
+    "main.js.map": "/marco-au-resume/static/js/main.81439064.chunk.js.map",
+    "runtime-main.js": "/marco-au-resume/static/js/runtime-main.e5bef305.js",
+    "runtime-main.js.map": "/marco-au-resume/static/js/runtime-main.e5bef305.js.map",
+    "static/js/2.b046b821.chunk.js": "/marco-au-resume/static/js/2.b046b821.chunk.js",
+    "static/js/2.b046b821.chunk.js.map": "/marco-au-resume/static/js/2.b046b821.chunk.js.map",
+    "index.html": "/marco-au-resume/index.html",
+    "precache-manifest.cc2233e538681d4432e11a0e6a5c3254.js": "/marco-au-resume/precache-manifest.cc2233e538681d4432e11a0e6a5c3254.js",
+    "service-worker.js": "/marco-au-resume/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/marco-au-resume/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.b046b821.chunk.js.LICENSE.txt": "/marco-au-resume/static/js/2.b046b821.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/marco-au-resume/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.6b2b5902.js",
+    "static/js/runtime-main.e5bef305.js",
     "static/js/2.b046b821.chunk.js",
     "static/css/main.5f361e03.chunk.css",
-    "static/js/main.f84fc526.chunk.js"
+    "static/js/main.81439064.chunk.js"
   ]
 }
