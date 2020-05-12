@@ -5,12 +5,11 @@ import { SessionContext } from "../../../../providers";
 
 const StyledDiv = styled.div`
   width: 40%;
-  // padding: 2em;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  @media (max-width: 375px) {
+  @media (max-width: 414px) {
     display: none;
   }
 `;
@@ -19,15 +18,17 @@ const StyledP = styled.p`
   font-style: italic;
 `;
 
+const StyledImg = styled.img`
+  max-height: 70%;
+  max-width: 70%;
+`;
+
 const Image = () => {
-  const { basename } = useContext(SessionContext);
+  const { language, basename } = useContext(SessionContext);
   return (
     <StyledDiv>
-      <img
-        style={{ maxHeight: "50%", maxWidth: "50%" }}
-        src={`${basename}/images/kenting.jpg`}
-      />
-      <StyledP>Kenting 墾丁, Taiwan</StyledP>
+      <StyledImg src={`${basename}/images/kenting.jpg`} />
+      <StyledP>{language.kenting}</StyledP>
     </StyledDiv>
   );
 };

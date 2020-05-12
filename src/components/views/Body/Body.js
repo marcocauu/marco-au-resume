@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 
 const StyledBody = styled.div`
   background-color: ${({ theme: { colors } }) => colors.beige};
-
   font-family: ${({ theme: { fontFamily } }) => fontFamily.robotoMono};
 `;
 

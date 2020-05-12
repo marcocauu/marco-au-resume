@@ -7,7 +7,7 @@ const StyledDiv = styled.div`
   width: 60%;
   padding: 2em 2em 2em 8em;
 
-  @media (max-width: 375px) {
+  @media (max-width: 414px) {
     width: 100%;
     padding: 2em;
   }
