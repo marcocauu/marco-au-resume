@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/marco-au-resume/precache-manifest.9c333d40247558e4c8d604115fb2f515.js"
+  "/marco-au-resume/precache-manifest.065ef8243a43f6af29d23388078823ba.js"
 );
 
 self.addEventListener('message', (event) => {
