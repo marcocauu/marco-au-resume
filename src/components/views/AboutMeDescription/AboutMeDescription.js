@@ -1,6 +1,6 @@
 import React from "react";
 
-import { DivCentered, H1Centered } from "../../common";
+import { DivCentered } from "../../common";
 import { Description, Image } from "./components";
 
 const AboutMeDescription = () => {
