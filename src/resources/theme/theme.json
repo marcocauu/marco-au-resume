@@ -1,6 +1,8 @@
 {
   "colors": {
-    "beige": "#edeaea"
+    "beige": "#edeaea",
+    "plum": "#a179af",
+    "darkPlum": "#3d3547"
   },
   "fontFamily": {
     "robotoMono": "'Roboto Mono', monospace"

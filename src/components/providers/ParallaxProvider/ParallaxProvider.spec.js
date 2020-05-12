@@ -5,7 +5,11 @@ import { ParallaxProvider } from "./ParallaxProvider";
 
 describe("ParallaxProvider", () => {
   it("renders", () => {
-    const wrapper = render(<ParallaxProvider />);
+    const wrapper = render(
+      <ParallaxProvider>
+        <React.Fragment />
+      </ParallaxProvider>
+    );
   });
 
   it("renders children", () => {

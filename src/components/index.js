@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 
 import { SessionProvider } from "./providers";
 import { Router } from "./views";
-import "../App.css";
 import language from "../resources/language/en.json";
 import theme from "../resources/theme/theme.json";
 

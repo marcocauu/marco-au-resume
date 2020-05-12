@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
 
-const StyledDiv = styled.div`
-  height: 100vh;
+import { SessionContext } from "../../providers";
+import { DivCentered, H1Centered } from "../../common";
+
+const StyledSpan = styled.span`
+  color: ${({ theme: { colors } }) => colors.plum};
 `;
 
 const StyledP = styled.p`
@@ -15,10 +18,14 @@ const StyledP = styled.p`
 `;
 
 const Intro = () => {
+  const { language } = useContext(SessionContext);
   return (
-    <StyledDiv>
-      <StyledP>Scroll</StyledP>
-    </StyledDiv>
+    <DivCentered height={100}>
+      <H1Centered fontSize={9}>
+        {language.hello} <StyledSpan>{language.name}</StyledSpan>
+      </H1Centered>
+      <StyledP>{language.scroll}</StyledP>
+    </DivCentered>
   );
 };
 

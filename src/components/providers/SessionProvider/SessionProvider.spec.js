@@ -5,7 +5,11 @@ import { SessionProvider } from "./SessionProvider";
 
 describe("SessionProvider", () => {
   it("renders", () => {
-    const wrapper = render(<SessionProvider />);
+    const wrapper = render(
+      <SessionProvider>
+        <React.Fragment />
+      </SessionProvider>
+    );
   });
 
   it("renders children", () => {

@@ -1,6 +1,7 @@
 import React from "react";
 import { ParallaxBanner } from "react-scroll-parallax";
 import styled from "styled-components";
+import PropTypes from "prop-types";
 
 import "./Banner.css";
 
@@ -32,13 +33,13 @@ const StyledBannerDiv = styled.div`
   align-items: center;
 `;
 
-const Banner = ({ imageSrc }) => {
+const Banner = ({ imageSrc, height }) => {
   return (
     <StyledVerticalDiv>
       <StyledBannerDiv>
         <ParallaxBanner
           style={{
-            height: "50vh",
+            height: `${height}vh`,
           }}
           className={"bannerBg"}
           layers={[{ image: imageSrc, amount: 0.2 }]}
@@ -46,6 +47,15 @@ const Banner = ({ imageSrc }) => {
       </StyledBannerDiv>
     </StyledVerticalDiv>
   );
+};
+
+Banner.propTypes = {
+  imageSrc: PropTypes.string.isRequired,
+  height: PropTypes.number.isRequired,
+};
+
+Banner.defaultProps = {
+  height: 100,
 };
 
 export { Banner };

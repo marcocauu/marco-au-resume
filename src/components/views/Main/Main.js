@@ -5,9 +5,11 @@ import {
   SessionContext,
   ThemeProvider,
 } from "../../providers";
-import { Banner } from "../Banner";
 import { Body } from "../Body";
 import { Intro } from "../Intro";
+import { AboutMe } from "../AboutMe";
+import { AboutMeDescription } from "../AboutMeDescription";
+import { Banner } from "../Banner";
 
 const Main = () => {
   const { language, theme } = useContext(SessionContext);
@@ -16,7 +18,9 @@ const Main = () => {
       <ParallaxProvider>
         <Body>
           <Intro />
-          <Banner imageSrc={language.images.vancouver} />
+          <AboutMe />
+          <AboutMeDescription />
+          <Banner imageSrc={language.images.vancouver} height={50} />
         </Body>
       </ParallaxProvider>
     </ThemeProvider>
