@@ -21,7 +21,14 @@
     },
     {
       "title": "Client-side",
-      "frameworks": ["Javascript", "React", "Storybook", "Dust", "ES6"]
+      "frameworks": [
+        "JavaScript",
+        "React",
+        "TypeScript",
+        "Storybook",
+        "Dust",
+        "ES6"
+      ]
     },
     {
       "title": "Testing",
