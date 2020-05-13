@@ -8,7 +8,7 @@
     "vancouver": "https://www.gtreview.com/wp-content/uploads/2015/01/Vancouver-Canada-Skyline-Sunset.jpg"
   },
   "description": [
-    "I am a software engineer who was born and raised in Vancouver, BC Canada. Most of my experience is with Javascript and React, but I am always looking to learn other frameworks and languages.",
+    "I am a software engineer who was born and raised in Vancouver, BC Canada. Most of my professional experience is with Javascript and React, but I am always looking to learn other frameworks and languages.",
     "Although I have not travelled much, I have greatly enjoyed travelling in the few times that I have went. My most recent trip to Taiwan was a bit of culture shock as it was my first time in Asia but I very much enjoyed experiencing Taiwanese culture and will definitely go again.",
     "In my spare time, I enjoy weightlifting, drawing and cooking new recipes for my family to try. Recently, I have taken up running as a result of the quarantine and have been enjoying it ever since!"
   ],
@@ -94,5 +94,7 @@
   ],
   "inquiries": "For any inquiries, please feel free to contact me through my email ",
   "viewOnGithub": "View on Github",
-  "githubUrl": "https://github.com/marcocauu/marco-au-resume"
+  "githubUrl": "https://github.com/marcocauu/marco-au-resume",
+  "viewLinkedin": "View my LinkedIn",
+  "linkedinUrl": "https://www.linkedin.com/in/marcoauu/"
 }

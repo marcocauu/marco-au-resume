@@ -22,6 +22,10 @@ const CenterContents = styled(DivCentered)`
   flex-direction: column;
 `;
 
+const StyledDivRow = styled.div`
+  align-content: row;
+`;
+
 const ContactMe = () => {
   const { language } = useContext(SessionContext);
   const classes = useStyles();
@@ -44,14 +48,24 @@ const ContactMe = () => {
           </>
         }
       />
-      <Button
-        id="viewOnGithubButton"
-        variant="outlined"
-        className={classes.button}
-        onClick={windowOpen(language.githubUrl, true)}
-      >
-        {language.viewOnGithub}
-      </Button>
+      <StyledDivRow>
+        <Button
+          id="viewOnGithubButton"
+          variant="outlined"
+          className={classes.button}
+          onClick={windowOpen(language.githubUrl, true)}
+        >
+          {language.viewOnGithub}
+        </Button>
+        <Button
+          id="viewLinkedinButton"
+          variant="outlined"
+          className={classes.button}
+          onClick={windowOpen(language.linkedinUrl, true)}
+        >
+          {language.viewLinkedin}
+        </Button>
+      </StyledDivRow>
     </CenterContents>
   );
 };

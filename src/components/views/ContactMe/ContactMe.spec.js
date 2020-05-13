@@ -22,6 +22,7 @@ describe("ContactMe", () => {
       </SessionProvider>
     );
     fireEvent.click(container.querySelector("#viewOnGithubButton"));
-    expect(window.open).toHaveBeenCalled();
+    fireEvent.click(container.querySelector("#viewLinkedinButton"));
+    expect(window.open).toHaveBeenCalledTimes(2);
   });
 });

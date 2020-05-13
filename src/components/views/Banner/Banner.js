@@ -3,7 +3,7 @@ import { ParallaxBanner } from "react-scroll-parallax";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 
-import "./Banner.css";
+import "../../../resources/styles/Banner.css";
 
 const StyledVerticalDiv = styled.div`
   width: 100%;
