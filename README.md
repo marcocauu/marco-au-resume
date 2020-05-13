@@ -4,7 +4,7 @@ A production ready link is ready for viewing [here](https://marcocauu.github.io/
 
 ## To Do
 
-Add more tests and refactor.
+Add link to Github repo and Contact Form.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
