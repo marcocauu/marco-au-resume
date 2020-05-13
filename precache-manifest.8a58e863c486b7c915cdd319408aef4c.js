@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f0726cefa123b5601371e22734e65ec3",
+    "revision": "9309c06e76182258685bba45d6e3f401",
     "url": "/marco-au-resume/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/marco-au-resume/static/css/2.f681e662.chunk.css"
   },
   {
-    "revision": "33741b27d1f0b229db50",
+    "revision": "4badfc807ed40d9166a2",
     "url": "/marco-au-resume/static/css/main.c9e41e4f.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/marco-au-resume/static/js/2.cf0b8b55.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "33741b27d1f0b229db50",
-    "url": "/marco-au-resume/static/js/main.7848d647.chunk.js"
+    "revision": "4badfc807ed40d9166a2",
+    "url": "/marco-au-resume/static/js/main.79979b90.chunk.js"
   },
   {
     "revision": "999707638104130bdacf",
