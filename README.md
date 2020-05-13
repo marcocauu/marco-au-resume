@@ -2,6 +2,10 @@
 
 A production ready link is ready for viewing [here](https://marcocauu.github.io/marco-au-resume/).
 
+## To Do
+
+Add more tests and refactor.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
