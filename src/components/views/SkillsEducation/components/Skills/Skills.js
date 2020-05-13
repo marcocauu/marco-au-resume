@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import styled from "styled-components";
 
 import { SessionContext } from "../../../../providers";
 import { StyledDiv, StyledH2, StyledP } from "../shared";
