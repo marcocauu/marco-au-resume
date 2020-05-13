@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const StyledDiv = styled.div`
   width: 50%;
-  padding: 2em 2em 2em 8em;
+  padding: 2em 2em 2em 2em;
 
   @media (max-width: 414px) {
     width: 75%;
