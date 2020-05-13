@@ -49,5 +49,11 @@
       "pre-commit": "npm test",
       "pre-push": "npm test"
     }
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/{!(index),}.{js,jsx,ts,tsx}",
+      "!src/serviceWorker.js"
+    ]
   }
 }

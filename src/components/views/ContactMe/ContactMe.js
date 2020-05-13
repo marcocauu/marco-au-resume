@@ -5,6 +5,7 @@ import styled from "styled-components";
 
 import { SessionContext } from "../../providers";
 import { DivCentered, Description } from "../../common";
+import { windowOpen } from "../../../helpers";
 
 const useStyles = makeStyles((theme) => ({
   button: {
@@ -44,9 +45,10 @@ const ContactMe = () => {
         }
       />
       <Button
+        id="viewOnGithubButton"
         variant="outlined"
         className={classes.button}
-        onClick={() => window.open(language.githubUrl, "_blank")}
+        onClick={windowOpen(language.githubUrl, true)}
       >
         {language.viewOnGithub}
       </Button>
