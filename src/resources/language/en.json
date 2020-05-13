@@ -86,5 +86,13 @@
       "summary": "Administered roadside assistance and travel insurnace, Maintained customer profiles and Audited financial statements.",
       "icon": "https://media.glassdoor.com/sqll/200024/bcaa-squarelogo-1423868030338.png"
     }
-  ]
+  ],
+  "contact": "Contact",
+  "contactMe": [
+    "This project was done using React and tested using Jest/React Testing Library.",
+    "If you would like to see the source code, please click on the link below."
+  ],
+  "inquiries": "For any inquiries, please feel free to contact me through my email ",
+  "viewOnGithub": "View on Github",
+  "githubUrl": "https://github.com/marcocauu/marco-au-resume"
 }

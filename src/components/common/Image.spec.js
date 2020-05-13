@@ -2,7 +2,7 @@ import React from "react";
 import { render } from "@testing-library/react";
 
 import { Image } from "./Image";
-import language from "../../../../../resources/language/en.json";
+import language from "../../resources/language/en.json";
 
 describe("Image", () => {
   it("should render", () => {
