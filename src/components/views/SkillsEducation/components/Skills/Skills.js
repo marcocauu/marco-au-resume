@@ -1,12 +1,11 @@
-import React, { useContext } from "react";
+import React from "react";
 
-import { SessionContext } from "../../../../providers";
 import { StyledDiv, StyledH2, StyledP } from "../shared";
 
-const SkillBody = (language) => (
+const SkillBody = ({ skills, title }) => (
   <>
-    <StyledH2>{language.skillTitle.toUpperCase()}</StyledH2>
-    {language.skills.map((skill, index) => (
+    <StyledH2>{title.toUpperCase()}</StyledH2>
+    {skills.map((skill, index) => (
       <div key={index}>
         <StyledP style={{ color: "white" }} bold>
           {`${skill.title}:`}
@@ -17,9 +16,12 @@ const SkillBody = (language) => (
   </>
 );
 
-const Skills = () => {
-  const { language } = useContext(SessionContext);
-  return <StyledDiv>{SkillBody(language)}</StyledDiv>;
+const Skills = ({ skills, title }) => {
+  return (
+    <StyledDiv>
+      <SkillBody skills={skills} title={title} />
+    </StyledDiv>
+  );
 };
 
 export { Skills };

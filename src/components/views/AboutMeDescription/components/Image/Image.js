@@ -1,7 +1,6 @@
-import React, { useContext } from "react";
+import React from "react";
+import PropTypes from "prop-types";
 import styled from "styled-components";
-
-import { SessionContext } from "../../../../providers";
 
 const StyledDiv = styled.div`
   width: 40%;
@@ -23,14 +22,16 @@ const StyledImg = styled.img`
   max-width: 70%;
 `;
 
-const Image = () => {
-  const { language, basename } = useContext(SessionContext);
-  return (
-    <StyledDiv>
-      <StyledImg src={`${basename}/images/kenting.jpg`} />
-      <StyledP>{language.kenting}</StyledP>
-    </StyledDiv>
-  );
+const Image = ({ text, path }) => (
+  <StyledDiv>
+    <StyledImg src={path} />
+    <StyledP>{text}</StyledP>
+  </StyledDiv>
+);
+
+Image.propTypes = {
+  text: PropTypes.string,
+  path: PropTypes.string.isRequired,
 };
 
 export { Image };

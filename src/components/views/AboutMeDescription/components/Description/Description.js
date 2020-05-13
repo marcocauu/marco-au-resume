@@ -1,7 +1,6 @@
-import React, { useContext } from "react";
+import React from "react";
+import PropTypes from "prop-types";
 import styled from "styled-components";
-
-import { SessionContext } from "../../../../providers";
 
 const StyledDiv = styled.div`
   width: 60%;
@@ -13,15 +12,22 @@ const StyledDiv = styled.div`
   }
 `;
 
-const DescriptionBody = (descriptionArray) => {
-  return descriptionArray.map((description, index) => {
-    return <p key={index}>{description}</p>;
+const DescriptionBody = ({ description }) => {
+  return description.map((desc, index) => {
+    return <p key={index}>{desc}</p>;
   });
 };
 
-const Description = () => {
-  const { language } = useContext(SessionContext);
-  return <StyledDiv>{DescriptionBody(language.description)}</StyledDiv>;
+const Description = ({ description }) => {
+  return (
+    <StyledDiv>
+      <DescriptionBody description={description} />
+    </StyledDiv>
+  );
+};
+
+Description.propTypes = {
+  description: PropTypes.arrayOf(PropTypes.string),
 };
 
 export { Description };

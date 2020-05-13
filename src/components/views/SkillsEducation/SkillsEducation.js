@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
 
 import { DivCentered } from "../../common";
 import { Skills, Education } from "./components";
+import { SessionContext } from "../../providers";
 
 const StyledDivCentered = styled(DivCentered)`
   justify-content: flex-start;
@@ -19,9 +20,10 @@ const StyledDivCentered = styled(DivCentered)`
 `;
 
 const SkillsEducation = () => {
+  const { language } = useContext(SessionContext);
   return (
     <StyledDivCentered height={110} darkMode>
-      <Skills />
+      <Skills title={language.skillTitle} skills={language.skills} />
       <Education />
     </StyledDivCentered>
   );

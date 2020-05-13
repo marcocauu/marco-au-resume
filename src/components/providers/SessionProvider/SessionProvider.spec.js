@@ -5,19 +5,7 @@ import { SessionProvider } from "./SessionProvider";
 
 describe("SessionProvider", () => {
   it("renders", () => {
-    const wrapper = render(
-      <SessionProvider>
-        <React.Fragment />
-      </SessionProvider>
-    );
-  });
-
-  it("renders children", () => {
-    const { queryByText } = render(
-      <SessionProvider>
-        <p>Test</p>
-      </SessionProvider>
-    );
-    expect(queryByText("Test")).toBeTruthy();
+    const { queryByText } = render(<SessionProvider>test</SessionProvider>);
+    expect(queryByText("test")).toBeTruthy();
   });
 });

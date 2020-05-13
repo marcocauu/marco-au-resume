@@ -6,15 +6,9 @@ import theme from "../../../resources/theme/theme.json";
 
 describe("ThemeProvider", () => {
   it("renders", () => {
-    const wrapper = render(<ThemeProvider theme={theme} />);
-  });
-
-  it("renders children", () => {
     const { queryByText } = render(
-      <ThemeProvider theme={theme}>
-        <p>Test</p>
-      </ThemeProvider>
+      <ThemeProvider theme={theme}>test</ThemeProvider>
     );
-    expect(queryByText("Test")).toBeTruthy();
+    expect(queryByText("test")).toBeTruthy();
   });
 });

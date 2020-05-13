@@ -5,19 +5,7 @@ import { ParallaxProvider } from "./ParallaxProvider";
 
 describe("ParallaxProvider", () => {
   it("renders", () => {
-    const wrapper = render(
-      <ParallaxProvider>
-        <React.Fragment />
-      </ParallaxProvider>
-    );
-  });
-
-  it("renders children", () => {
-    const { queryByText } = render(
-      <ParallaxProvider>
-        <p>Test</p>
-      </ParallaxProvider>
-    );
-    expect(queryByText("Test")).toBeTruthy();
+    const { queryByText } = render(<ParallaxProvider>test</ParallaxProvider>);
+    expect(queryByText("test")).toBeTruthy();
   });
 });
