@@ -3,7 +3,7 @@
   "name": "Marco Au",
   "aboutMe": "About Me",
   "scroll": "Scroll",
-  "kenting": "Kenting 墾丁, Taiwan",
+  "kenting": "Kenting, Taiwan",
   "images": {
     "vancouver": "https://www.gtreview.com/wp-content/uploads/2015/01/Vancouver-Canada-Skyline-Sunset.jpg"
   },
@@ -51,6 +51,33 @@
       "major": "Bachelor of Business Administration",
       "concentration": "Human Resources",
       "yearAttended": "(2013 - 2017)"
+    }
+  ],
+  "experience": "Experience",
+  "experienceList": [
+    {
+      "company": "realtor.com",
+      "location": "Richmond, BC Canada",
+      "title": "Software Engineer",
+      "date": "January 2020 - May 2020",
+      "summary": "Contributed to new SaaS product for listing Facebook ads, Reduced codebase by developing reusable components, Mentored co-op engineers",
+      "icon": "https://static.rdc.moveaws.com/touch-icon.png"
+    },
+    {
+      "company": "realtor.com",
+      "location": "Richmond, BC Canada",
+      "title": "Co-op Software Engineer",
+      "date": "April 2018 - August 2019",
+      "summary": "Implemented GraphQL endpoints with senior developers, Learned CI/CD/Jenkins technologies, Helped transitioned codebase from Dust to React",
+      "icon": "https://static.rdc.moveaws.com/touch-icon.png"
+    },
+    {
+      "company": "BCAA",
+      "location": "Burnaby, BC Canada",
+      "title": "Insurance Advisor",
+      "date": "August 2016 - January 2017",
+      "summary": "Administered roadside assistance and travel insurnace, Maintained customer profiles and Audited financial statements.",
+      "icon": "https://media.glassdoor.com/sqll/200024/bcaa-squarelogo-1423868030338.png"
     }
   ]
 }

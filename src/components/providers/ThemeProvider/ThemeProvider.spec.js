@@ -1,7 +1,7 @@
 import React from "react";
 import { render } from "@testing-library/react";
 
-import { Theme as ThemeProvider } from "./ThemeProvider";
+import { ThemeProvider } from "./ThemeProvider";
 import theme from "../../../resources/theme/theme.json";
 
 describe("ThemeProvider", () => {

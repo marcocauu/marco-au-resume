@@ -11,6 +11,7 @@ import { HeaderSeparator } from "../HeaderSeparator";
 import { AboutMeDescription } from "../AboutMeDescription";
 import { Banner } from "../Banner";
 import { SkillsEducation } from "../SkillsEducation";
+import { Experience } from "../Experience";
 
 const Main = () => {
   const { language, theme } = useContext(SessionContext);
@@ -29,6 +30,8 @@ const Main = () => {
           />
           <HeaderSeparator headerText={language.skillsEducation} darkMode />
           <SkillsEducation />
+          <HeaderSeparator headerText={language.experience} darkMode />
+          <Experience experienceList={language.experienceList} />
         </Body>
       </ParallaxProvider>
     </ThemeProvider>

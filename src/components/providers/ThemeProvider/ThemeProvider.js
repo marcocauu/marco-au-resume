@@ -1,5 +1,5 @@
 import React from "react";
-import { ThemeProvider } from "styled-components";
+import { ThemeProvider, ThemeContext } from "styled-components";
 import PropTypes from "prop-types";
 
 const Theme = ({ children, theme }) => {
@@ -10,4 +10,4 @@ Theme.propTypes = {
   theme: PropTypes.object.isRequired,
 };
 
-export { Theme };
+export { Theme as ThemeProvider, ThemeContext };
