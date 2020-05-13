@@ -37,6 +37,9 @@ const VerticalTimelineElements = ({ experienceList }) => {
             {experience.title}
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
+            {experience.company}
+          </h4>
+          <h4 className="vertical-timeline-element-subtitle">
             {experience.location}
           </h4>
           <p>{experience.summary}</p>
@@ -48,7 +51,7 @@ const VerticalTimelineElements = ({ experienceList }) => {
 
 const Experience = ({ experienceList }) => {
   return (
-    <DivCentered height={110} darkMode>
+    <DivCentered height={130} darkMode>
       <VerticalTimeline>
         <VerticalTimelineElements experienceList={experienceList} />
       </VerticalTimeline>
