@@ -8,7 +8,7 @@ import theme from "../../../resources/theme/theme.json";
 
 describe("SkillsEducation", () => {
   it("should render", () => {
-    const { queryByText } = render(
+    const wrapper = render(
       <SessionProvider language={language}>
         <ThemeProvider theme={theme}>
           <SkillsEducation />
