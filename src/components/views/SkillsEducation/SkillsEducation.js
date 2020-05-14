@@ -26,7 +26,7 @@ const SkillsEducation = () => {
       <Skills title={language.skillTitle} skills={language.skills} />
       <Education
         title={language.educationTitle}
-        major={language.majorTitle}
+        major={language.programTitle}
         concentration={language.concentrationTitle}
         education={language.schools}
       />

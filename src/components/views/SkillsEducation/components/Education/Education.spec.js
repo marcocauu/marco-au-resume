@@ -12,7 +12,7 @@ describe("Education", () => {
       <ThemeProvider theme={theme}>
         <Education
           title={language.educationTitle}
-          major={language.majorTitle}
+          major={language.programTitle}
           concentration={language.concentrationTitle}
           education={language.schools}
         />
@@ -22,7 +22,7 @@ describe("Education", () => {
     language.schools.map((school) => {
       expect(queryByText(school.name)).toBeTruthy();
       expect(
-        queryByText(`${language.majorTitle} ${school.major}`)
+        queryByText(`${language.programTitle} ${school.major}`)
       ).toBeTruthy();
       expect(
         queryByText(`${language.concentrationTitle} ${school.concentration}`)
