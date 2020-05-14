@@ -7,15 +7,20 @@ import { SessionContext } from "../../providers";
 import { DivCentered, Description } from "../../common";
 import { windowOpen } from "../../../helpers";
 
-const useStyles = makeStyles((theme) => ({
-  button: {
-    margin: theme.spacing(1),
-    fontFamily: "inherit",
-  },
-  input: {
-    display: "none",
-  },
-}));
+const useStyles = (color) =>
+  makeStyles((theme) => ({
+    button: {
+      margin: theme.spacing(1),
+      fontFamily: "inherit",
+      "&:hover": {
+        backgroundColor: color,
+        color: "white",
+      },
+    },
+    input: {
+      display: "none",
+    },
+  }))();
 
 const CenterContents = styled(DivCentered)`
   text-align: center;
@@ -27,8 +32,8 @@ const StyledDivRow = styled.div`
 `;
 
 const ContactMe = () => {
-  const { language } = useContext(SessionContext);
-  const classes = useStyles();
+  const { language, theme } = useContext(SessionContext);
+  const classes = useStyles(theme.colors.plum);
 
   return (
     <CenterContents height={50}>

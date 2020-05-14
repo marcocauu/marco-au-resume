@@ -4,11 +4,12 @@ import { render, fireEvent } from "@testing-library/react";
 import { ContactMe } from "./ContactMe";
 import { SessionProvider } from "../../providers";
 import language from "../../../resources/language/en.json";
+import theme from "../../../resources/theme/theme.json";
 
 describe("ContactMe", () => {
   it("should render", () => {
     const wrapper = render(
-      <SessionProvider language={language}>
+      <SessionProvider language={language} theme={theme}>
         <ContactMe />
       </SessionProvider>
     );
@@ -17,7 +18,7 @@ describe("ContactMe", () => {
   it("should call window open function", () => {
     window.open = jest.fn();
     const { container } = render(
-      <SessionProvider language={language}>
+      <SessionProvider language={language} theme={theme}>
         <ContactMe />
       </SessionProvider>
     );
