@@ -1,30 +1,52 @@
-import React, { useContext } from "react";
+import React from "react";
+import PropTypes from "prop-types";
 
-import { SessionContext } from "../../../../providers";
 import { StyledDiv, StyledH2, StyledP, StyledHR } from "../shared";
 
-const EducationBody = (language) => (
+const EducationBody = ({ title, major, concentration, education }) => (
   <>
-    <StyledH2>{language.educationTitle.toUpperCase()}</StyledH2>
-    {language.schools.map((school, index) => (
+    <StyledH2>{title.toUpperCase()}</StyledH2>
+    {education.map((school, index) => (
       <div key={index}>
         <StyledP bold>{school.name}</StyledP>
         <StyledP>{school.yearAttended}</StyledP>
         <StyledP>
-          {language.major} {school.major}
+          {major} {school.major}
         </StyledP>
         <StyledP>
-          {language.concentration} {school.concentration}
+          {concentration} {school.concentration}
         </StyledP>
-        {index !== language.schools.length - 1 && <StyledHR />}
+        {index !== education.length - 1 && <StyledHR />}
       </div>
     ))}
   </>
 );
 
-const Education = () => {
-  const { language } = useContext(SessionContext);
-  return <StyledDiv>{EducationBody(language)}</StyledDiv>;
+const Education = ({ title, major, concentration, education }) => (
+  <StyledDiv>
+    {EducationBody({ title, major, concentration, education })}
+  </StyledDiv>
+);
+
+Education.propTypes = {
+  title: PropTypes.string.isRequired,
+  major: PropTypes.string.isRequired,
+  concentration: PropTypes.string.isRequired,
+  education: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      major: PropTypes.string.isRequired,
+      concentration: PropTypes.string.isRequired,
+      yearAttended: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};
+
+Education.defaultProps = {
+  title: "",
+  major: "",
+  concentration: "",
+  education: [],
 };
 
 export { Education };

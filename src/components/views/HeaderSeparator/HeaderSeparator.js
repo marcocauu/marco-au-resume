@@ -25,6 +25,7 @@ const HeaderSeparator = ({ headerText, darkMode }) => {
 
 HeaderSeparator.propTypes = {
   headerText: PropTypes.string.isRequired,
+  darkMode: PropTypes.bool,
 };
 
 HeaderSeparator.defaultProps = {

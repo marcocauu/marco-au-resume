@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import { StyledDiv, StyledH2, StyledP } from "../shared";
 
@@ -22,6 +23,21 @@ const Skills = ({ skills, title }) => {
       <SkillBody skills={skills} title={title} />
     </StyledDiv>
   );
+};
+
+Skills.propTypes = {
+  skills: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      frameworks: PropTypes.arrayOf(PropTypes.string).isRequired,
+    })
+  ).isRequired,
+  title: PropTypes.string.isRequired,
+};
+
+Skills.defaultProps = {
+  skills: [],
+  title: "",
 };
 
 export { Skills };

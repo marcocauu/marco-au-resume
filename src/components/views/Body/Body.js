@@ -13,8 +13,4 @@ Body.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-Body.defaultProps = {
-  backgroundColor: "white",
-};
-
 export { Body };

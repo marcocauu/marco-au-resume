@@ -24,7 +24,12 @@ const SkillsEducation = () => {
   return (
     <StyledDivCentered height={110} darkMode>
       <Skills title={language.skillTitle} skills={language.skills} />
-      <Education />
+      <Education
+        title={language.educationTitle}
+        major={language.majorTitle}
+        concentration={language.concentrationTitle}
+        education={language.schools}
+      />
     </StyledDivCentered>
   );
 };
