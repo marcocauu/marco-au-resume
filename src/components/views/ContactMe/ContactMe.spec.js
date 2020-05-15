@@ -15,8 +15,9 @@ describe("ContactMe", () => {
     );
   });
 
-  it("should call window open function", () => {
+  it("should call window functions", () => {
     window.open = jest.fn();
+    window.scrollTo = jest.fn();
     const { container } = render(
       <SessionProvider language={language} theme={theme}>
         <ContactMe />
@@ -24,6 +25,8 @@ describe("ContactMe", () => {
     );
     fireEvent.click(container.querySelector("#viewOnGithubButton"));
     fireEvent.click(container.querySelector("#viewLinkedinButton"));
+    fireEvent.click(container.querySelector("#scrollToTopButton"));
     expect(window.open).toHaveBeenCalledTimes(2);
+    expect(window.scrollTo).toHaveBeenCalledTimes(1);
   });
 });

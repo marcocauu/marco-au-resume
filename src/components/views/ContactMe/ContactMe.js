@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 import { SessionContext } from "../../providers";
 import { DivCentered, Description } from "../../common";
-import { windowOpen } from "../../../helpers";
+import { windowOpen, scrollToTop } from "../../../helpers";
 
 const useStyles = (color) =>
   makeStyles((theme) => ({
@@ -69,6 +69,15 @@ const ContactMe = () => {
           onClick={windowOpen(language.linkedinUrl, true)}
         >
           {language.viewLinkedin}
+        </Button>
+      </StyledDivRow>
+      <StyledDivRow>
+        <Button
+          id="scrollToTopButton"
+          className={classes.button}
+          onClick={scrollToTop()}
+        >
+          {language.scrollToTop}
         </Button>
       </StyledDivRow>
     </CenterContents>
