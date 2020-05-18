@@ -2,15 +2,17 @@ import React from "react";
 import { render, fireEvent } from "@testing-library/react";
 
 import { ContactMe } from "./ContactMe";
-import { SessionProvider } from "../../providers";
+import { SessionProvider, ThemeProvider } from "../../providers";
 import language from "../../../resources/language/en.json";
 import theme from "../../../resources/theme/theme.json";
 
 describe("ContactMe", () => {
   it("should render", () => {
     const wrapper = render(
-      <SessionProvider language={language} theme={theme}>
-        <ContactMe />
+      <SessionProvider language={language}>
+        <ThemeProvider theme={theme}>
+          <ContactMe />
+        </ThemeProvider>
       </SessionProvider>
     );
   });
@@ -19,8 +21,10 @@ describe("ContactMe", () => {
     window.open = jest.fn();
     window.scrollTo = jest.fn();
     const { container } = render(
-      <SessionProvider language={language} theme={theme}>
-        <ContactMe />
+      <SessionProvider language={language}>
+        <ThemeProvider theme={theme}>
+          <ContactMe />
+        </ThemeProvider>
       </SessionProvider>
     );
     fireEvent.click(container.querySelector("#viewOnGithubButton"));

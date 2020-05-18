@@ -2,15 +2,17 @@ import React from "react";
 import { render } from "@testing-library/react";
 
 import { Router } from "./Router";
-import { SessionProvider } from "../../providers";
+import { SessionProvider, ThemeProvider } from "../../providers";
 import language from "../../../resources/language/en.json";
 import theme from "../../../resources/theme/theme.json";
 
 describe("Router", () => {
   it("should render", () => {
     const wrapper = render(
-      <SessionProvider basename={""} language={language} theme={theme}>
-        <Router />
+      <SessionProvider basename={""} language={language}>
+        <ThemeProvider theme={theme}>
+          <Router />
+        </ThemeProvider>
       </SessionProvider>
     );
   });

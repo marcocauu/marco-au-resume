@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";
 import styled from "styled-components";
 
-import { SessionContext } from "../../providers";
+import { SessionContext, ThemeContext } from "../../providers";
 import { DivCentered, Description } from "../../common";
 import { windowOpen, scrollToTop } from "../../../helpers";
 
@@ -32,8 +32,11 @@ const StyledDivRow = styled.div`
 `;
 
 const ContactMe = () => {
-  const { language, theme } = useContext(SessionContext);
-  const classes = useStyles(theme.colors.plum);
+  const { language } = useContext(SessionContext);
+  const {
+    colors: { plum },
+  } = useContext(ThemeContext);
+  const classes = useStyles(plum);
 
   return (
     <CenterContents height={50}>
