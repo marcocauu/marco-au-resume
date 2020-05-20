@@ -5,8 +5,12 @@ const DivCentered = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: ${({ darkMode, theme: { colors } }) =>
-    darkMode ? colors.darkPlum : "inherit"};
+  background-color: ${({
+    darkMode,
+    theme: {
+      colors: { darkPlum },
+    },
+  }) => (darkMode ? darkPlum : "inherit")};
 `;
 
 export { DivCentered };

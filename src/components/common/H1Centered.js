@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const H1Centered = styled.h1`
   position: absolute;
-  font-size: ${(props) => `${props.fontSize}vw`};
+  font-size: ${({ fontSize }) => `${fontSize}vw`};
   text-align: center;
   margin-block-start: 0;
 `;

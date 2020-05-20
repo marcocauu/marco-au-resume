@@ -17,13 +17,11 @@ const SkillBody = ({ skills, title }) => (
   </>
 );
 
-const Skills = ({ skills, title }) => {
-  return (
-    <StyledDiv>
-      <SkillBody skills={skills} title={title} />
-    </StyledDiv>
-  );
-};
+const Skills = ({ skills, title }) => (
+  <StyledDiv>
+    <SkillBody skills={skills} title={title} />
+  </StyledDiv>
+);
 
 Skills.propTypes = {
   skills: PropTypes.arrayOf(

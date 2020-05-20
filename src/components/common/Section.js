@@ -4,16 +4,14 @@ import PropTypes from "prop-types";
 import { HeaderSeparator } from "../views/HeaderSeparator";
 import { DivCentered } from "./DivCentered";
 
-const Section = ({ headerText, darkMode, contentHeight, children }) => {
-  return (
-    <>
-      <HeaderSeparator headerText={headerText} darkMode={darkMode} />
-      <DivCentered height={contentHeight} darkMode={darkMode}>
-        {children}
-      </DivCentered>
-    </>
-  );
-};
+const Section = ({ headerText, darkMode, contentHeight, children }) => (
+  <>
+    <HeaderSeparator headerText={headerText} darkMode={darkMode} />
+    <DivCentered height={contentHeight} darkMode={darkMode}>
+      {children}
+    </DivCentered>
+  </>
+);
 
 Section.propTypes = {
   headerText: PropTypes.string.isRequired,

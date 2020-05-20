@@ -33,21 +33,19 @@ const StyledBannerDiv = styled.div`
   align-items: center;
 `;
 
-const Banner = ({ imageSrc, height }) => {
-  return (
-    <StyledVerticalDiv>
-      <StyledBannerDiv>
-        <ParallaxBanner
-          style={{
-            height: `${height}vh`,
-          }}
-          className={"bannerBg"}
-          layers={[{ image: imageSrc, amount: 0.2 }]}
-        />
-      </StyledBannerDiv>
-    </StyledVerticalDiv>
-  );
-};
+const Banner = ({ imageSrc, height }) => (
+  <StyledVerticalDiv>
+    <StyledBannerDiv>
+      <ParallaxBanner
+        style={{
+          height: `${height}vh`,
+        }}
+        className={"bannerBg"}
+        layers={[{ image: imageSrc, amount: 0.2 }]}
+      />
+    </StyledBannerDiv>
+  </StyledVerticalDiv>
+);
 
 Banner.propTypes = {
   imageSrc: PropTypes.string.isRequired,
