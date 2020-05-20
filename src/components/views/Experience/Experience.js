@@ -4,14 +4,15 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import PropTypes from "prop-types";
 
-import { DivCentered } from "../../common";
-import { ThemeContext } from "../../providers";
+import { ThemeContext, SessionContext } from "../../providers";
 import { Icon } from "./components";
+import { Section } from "../../common";
 
 const VerticalTimelineElements = ({ experienceList }) => {
-  const { colors } = useContext(ThemeContext);
+  const {
+    colors: { plum, beige },
+  } = useContext(ThemeContext);
   return (
     <>
       {experienceList.map((experience, index) => (
@@ -19,14 +20,14 @@ const VerticalTimelineElements = ({ experienceList }) => {
           key={index}
           className="vertical-timeline-element--work"
           contentStyle={{
-            background: colors.plum,
-            color: colors.beige,
+            background: plum,
+            color: beige,
           }}
-          contentArrowStyle={{ borderRight: `7px solid  ${colors.plum}` }}
+          contentArrowStyle={{ borderRight: `7px solid  ${plum}` }}
           date={experience.date}
           iconStyle={{
             background: "rgb(33, 150, 243)",
-            color: colors.beige,
+            color: beige,
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
@@ -49,27 +50,15 @@ const VerticalTimelineElements = ({ experienceList }) => {
   );
 };
 
-const Experience = ({ experienceList }) => {
+const Experience = () => {
+  const { language } = useContext(SessionContext);
   return (
-    <DivCentered height={130} darkMode>
+    <Section headerText={language.experience} contentHeight={130} darkMode>
       <VerticalTimeline>
-        <VerticalTimelineElements experienceList={experienceList} />
+        <VerticalTimelineElements experienceList={language.experienceList} />
       </VerticalTimeline>
-    </DivCentered>
+    </Section>
   );
-};
-
-Experience.propTypes = {
-  experienceList: PropTypes.arrayOf(
-    PropTypes.shape({
-      company: PropTypes.string.isRequired,
-      location: PropTypes.string.isRequired,
-      title: PropTypes.string.isRequired,
-      date: PropTypes.string.isRequired,
-      summary: PropTypes.string.isRequired,
-      icon: PropTypes.string.isRequired,
-    })
-  ).isRequired,
 };
 
 export { Experience };
